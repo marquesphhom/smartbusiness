@@ -13,12 +13,12 @@ sidebar.addEventListener('click', () => {
 function getDate(element){
     let date = new Date();
     let day = date.getDate();
-    let month = date.getMonth();
+    let month = date.getMonth() < 9 ? `0${date.getMonth() + 1}` : date.getMonth();
     let year = date.getFullYear();
     let hour = date.getHours();
     let minute = date.getMinutes();
-    let second = date.getSeconds();
-    let time = `${day}/${month+1}/${year} ${hour}:${minute}:${second}`;
+    let second = date.getSeconds().toString().length < 2 ? `0${date.getSeconds()}` : date.getSeconds();
+    let time = `${day}/${month}/${year} ${hour}:${minute}:${second}`;
     const h1 = document.createElement('h1');
     h1.textContent = time;
     element.appendChild(h1);
