@@ -5,11 +5,43 @@
 }
 
 body{
+    
     font-family: 'Roboto', sans-serif;
     background-image: url('../img/background.jpg');
     background-size: cover;
-    width: 100%;
+}
+
+.main{
+    position: relative;
+
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    margin: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.header, .main-content{
+}
+
+.main-content{
     height: 100%;
+}
+
+.sidebar{
+    position: fixed;
+    top: 205px;
+    left: 15px;
+    bottom: 15px;
+    border: 2px solid white;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo{
