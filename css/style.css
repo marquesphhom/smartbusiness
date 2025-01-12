@@ -21,12 +21,15 @@ body{
 }
 
 .header{
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
     margin: 15px;
     border: 2px solid white;
     border-radius: 10px;
 }
 
-.header, .main-content{
+.left, .center, .right{
+    border: 2px solid white;
 }
 
 .main-content{
@@ -39,9 +42,14 @@ body{
     left: 15px;
     bottom: 15px;
     border: 2px solid white;
-    width: 300px;
+    width: 50px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+}
+
+.sidebar.active{
+    width: 300px;
 }
 
 .logo{
