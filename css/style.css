@@ -28,6 +28,19 @@ body{
     border-radius: 10px;
 }
 
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 .left, .center, .right{
     border: 2px solid white;
 }
@@ -54,7 +67,5 @@ body{
 
 .logo{
     color: white;
-    font-size: clamp(1rem, 3vw, 2rem);
     text-align: center;
-    margin-top: 20px;
 }
