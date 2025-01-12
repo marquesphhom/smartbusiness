@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+.logo{
+    color: white;
+    font-size: clamp(1rem, 3vw, 2rem);
+    text-align: center;
+    margin-top: 20px;
+}
