@@ -15,8 +15,8 @@ function getDate(element){
     let day = date.getDate();
     let month = date.getMonth() < 9 ? `0${date.getMonth() + 1}` : date.getMonth();
     let year = date.getFullYear();
-    let hour = date.getHours();
-    let minute = date.getMinutes();
+    let hour = date.getHours() < 10 ? `0${date.getHours()}` : date.getHours();
+    let minute = date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes();
     let second = date.getSeconds().toString().length < 2 ? `0${date.getSeconds()}` : date.getSeconds();
     let time = `${day}/${month}/${year} ${hour}:${minute}:${second}`;
     const h1 = document.createElement('h1');

@@ -24,7 +24,8 @@ body{
     display: grid;
     grid-template-columns: 300px 1fr 320px;
     margin: 15px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    box-shadow: 2px 2px 10px white;
     border-radius: 10px;
 }
 
@@ -41,10 +42,6 @@ body{
     color: white;
 }
 
-.left, .center, .right{
-    border: 2px solid white;
-}
-
 .main-content{
     height: 100%;
 }
@@ -54,10 +51,11 @@ body{
     top: 205px;
     left: 15px;
     bottom: 15px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 50px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 10px white;
     transition: all 0.5s;
 }
 
