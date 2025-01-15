@@ -1,6 +1,7 @@
 const sidebar = document.querySelector('.sidebar');
 const left = document.querySelector('.left');
 const right = document.querySelector('.right');
+const sbSpan = document.querySelectorAll('.sidebar > div > span');
 
 left.addEventListener('click', () => {
     sidebar.classList.toggle('active');
@@ -8,6 +9,9 @@ left.addEventListener('click', () => {
 
 sidebar.addEventListener('click', () => {
     sidebar.classList.toggle('active');
+    sbSpan.forEach(span => {
+        span.classList.toggle('active');
+    })
 })
 
 function getDate(element){
